@@ -133,7 +133,7 @@ ul {
   margin-left: auto;
 }
 
-.header-cl-item {
+.header-cl-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,14 +233,13 @@ ul {
 }
 
 .features-item-img {
-  width: 270px;
   height: 120px;
   background-color: var(--third-backgroud-color);
   margin-bottom: 30px;
-}
 
-.features-item-img-vector {
-  margin: 25px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .features-item-title {
@@ -318,6 +317,10 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.our-team-soc-item + .our-team-soc-item {
+  margin-left: 10px;
 }
 
 .our-team-soc-link {
@@ -420,8 +423,12 @@ ul {
   flex-basis: calc(100% / 3 - (2 * var(--set-gap)));
 }
 
-.examples-item:hover
-/* , .examples-item:focus - у коментах так як мені не вдалось навести фокус на моєму домашнему ПК */ {
+.examples-item-link {
+  display: block;
+}
+
+.examples-item-link:hover,
+.examples-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
